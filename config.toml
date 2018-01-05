@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.skaart.com/"
 languageCode = "nb-no"
 title = "Awesome Static Site"
 theme = "minimal"

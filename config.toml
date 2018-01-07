@@ -1,67 +1,87 @@
 baseURL = "https://www.skaart.com/"
 languageCode = "nb-no"
-title = "Awesome Static Site"
-theme = "minimal"
-# disqusShortname = "username" # delete this to disable disqus comments
-googleAnalytics = ""
+title = "Trond Skår"
+theme = "hugo-smpl-theme"
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = "UA-112084565-1"
 
 [params]
-    author = "Calin Tataru"
-    description = "Personal blog theme powered by Hugo"
-    githubUsername = "#"
-    accent = "red"
-    showBorder = true
-    backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
 
-[[menu.main]]
-    url = "/"
-    name = "Home"
-    weight = 1
+  # To provide more meta data for search engines feel free to add a few information.
+  # This lines will be inserted as meta tags.
+  name = "Trond Skår"
+  description = "Your Description"
 
-[[menu.main]]
-    url = "/post/"
-    name = "Posts"
-    weight = 2
+  # Background
+  [params.background]
+    image = "assets/img/bg.jpg"
 
-[[menu.main]]
-    url = "/project/"
-    name = "Projects"
-    weight = 3
+    # Enable and set background fade speed
+    [params.background.fade]
+      enable = true
+      speed = 500
 
-[[menu.main]]
-    url = "/about"
-    name = "About Me"
-    weight = 4
+  # Logo section
+  [params.logo]
+    enable = false
+    image = "assets/img/logo.png"
+    alt = "BlackTie.co"
+    width = "100"
 
-# Social icons to be shown on the right-hand side of the navigation bar
-# The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
+  # Header section
+  [params.header]
+    enable = true
+    title = "Trond Skår"
 
-[[menu.icon]]
-    url = "mailto:skaart@gmail.com"
-    name = "envelope-o"
-    weight = 1
+  # Quote section
+  [params.quote]
+    enable = false
+    text = "Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy."
 
-[[menu.icon]]
-    url = "https://github.com/skaart/"
-    name = "github"
-    weight = 2
+  # Social icons section
+  # Add a modifier class to increase size
+  # fa-lg, fa-2x, fa-3x, fa-4x, fa-5x
+  # e.g., icon = "fa-instagram fa-lg"
+  [params.social_icons]
+    enable = true
 
-[[menu.icon]]
-    url = "https://twitter.com/trondskaar/"
-    name = "twitter"
-    weight = 3
+  [[params.social]]
+    title = "LinkedIn"
+    icon = "fa-linkedin"
+    link = "https://www.linkedin.com/in/trond-skar/"
 
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/trond-skar/"
-    name = "linkedin"
-    weight = 4
+  [[params.social]]
+    title = "Instagram"
+    icon = "fa-instagram"
+    link = "https://www.instagram.com/skaart/"
 
-[[menu.icon]]
-    url = "https://www.facebook.com/trond.skar"
-    name = "facebook"
-    weight = 5
+  [[params.social]]
+    title = "Facebook"
+    icon = "fa-facebook"
+    link = "https://www.facebook.com/trond.skar"
+
+  [[params.social]]
+    title = "Snapchat"
+    icon = "fa-snapchat"
+    link = "@skaart"
+
+  [[params.social]]
+    title = "Twitter"
+    icon = "fa-twitter"
+    link = "http://twitter.com/trondskaar"
+
+  [[params.social]]
+    title = "GitHub"
+    icon = "fa-github"
+    link = "https://github.com/skaart"
+
+  [[params.social]]
+    title = "Email Me!"
+    icon = "fa-envelope"
+    link = "mailto:spam.spammessen@gmail.com"

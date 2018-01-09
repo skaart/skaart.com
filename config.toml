@@ -62,16 +62,6 @@ googleAnalytics = "UA-112084565-1"
     link = "https://www.instagram.com/skaart/"
 
   [[params.social]]
-    title = "Facebook"
-    icon = "fa-facebook"
-    link = "https://www.facebook.com/trond.skar"
-
-  [[params.social]]
-    title = "Snapchat"
-    icon = "fa-snapchat"
-    link = "@skaart"
-
-  [[params.social]]
     title = "Twitter"
     icon = "fa-twitter"
     link = "http://twitter.com/trondskaar"
